@@ -1,0 +1,83 @@
+.card {
+  max-width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 20px;
+}
+.detail {
+  max-height: 200px;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.image {
+  margin-right: 10px;
+  object-fit: cover;
+  width: 50%
+}
+.emailPart {
+  min-width: 40px;
+}
+.overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+.link {
+  text-decoration: none;
+}
+.oval {
+  width: fit-content;
+  border: 1px solid grey;
+  border-radius: 40px;
+  padding: 5px;
+}
+.identification {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+}
+
+.auto-grid > * {
+  max-width: 400px;
+}
+
+.auto-grid > * + * {
+  margin-top: 1rem;
+}
+
+@supports (display: grid) {
+  .auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+  }
+
+  .auto-grid > * {
+    max-width: unset;
+  }
+
+  .auto-grid > * + * {
+    margin-top: unset;
+  }
+}
