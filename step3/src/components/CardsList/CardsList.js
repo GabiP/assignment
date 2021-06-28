@@ -25,9 +25,9 @@ class CardsList extends Component {
         const { cards } = this.state;
         return (
             <div className="wrapper">
-                <h1>Users</h1>
-                <div className="auto-grid">
-                    {cards.map(card => (
+                <h1 className="mainHeading">Users</h1>
+                <div className="cards">
+                    {cards.length ? cards.map(card => (
                         <Card
                             key={card.id}
                             avatarUrl={card.avatar}
@@ -35,7 +35,7 @@ class CardsList extends Component {
                             lastName={card.last_name}
                             id={card.id}
                         />
-                    ))}
+                    )) : 'Waiting'}
                 </div>
             </div>
         );

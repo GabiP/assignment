@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <title>Cards</title>
+    <style>
+        .card {
+            max-width: 300px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            padding: 20px;
+        }
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+        }
+        .link {
+            text-decoration: none;
+        }
+        .oval {
+            height: 28px;
+            width: fit-content;
+            border: 1px solid #bbbbbb;
+            border-radius: 40px;
+            padding: 5px;
+            margin-left: 0px;
+        }
+        .identification {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+        .heading {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            float: left;
+            width: 25%;
+            margin: 10px;
+        }
+
+        .wrapper {
+            max-width: 65rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h1>Users</h1>
+    <article class="card column">
+        <header class="heading">
+            <img src="https://reqres.in/img/faces/1-image.jpg" alt="avatar" class="avatar">
+            <nav>
+                <a class="row link" href=""><i class="material-icons">info</i>See details</a>
+            </nav>
+        </header>
+        <h2>George Bluth</h2>
+        <figure class="row oval">
+            <i class="material-icons">person</i>
+            <p class="identification">ID: 1</p>
+        </figure>
+    </article>
+    <article class="card column">
+        <header class="heading">
+            <img src="https://reqres.in/img/faces/2-image.jpg" alt="avatar" class="avatar">
+            <nav>
+                <a class="row link" href=""><i class="material-icons">info</i>See details</a>
+            </nav>
+        </header>
+        <h2>Janet Weaver</h2>
+        <figure class="row oval">
+            <i class="material-icons">person</i>
+            <p class="identification">ID: 2</p>
+        </figure>
+    </article>
+    <article class="card column">
+        <header class="heading">
+            <img src="https://reqres.in/img/faces/3-image.jpg" alt="avatar" class="avatar">
+            <nav>
+                <a class="row link" href=""><i class="material-icons">info</i>See details</a>
+            </nav>
+        </header>
+        <h2>Emma Wong</h2>
+        <figure class="row oval">
+            <i class="material-icons">person</i>
+            <p class="identification">ID: 3</p>
+        </figure>
+    </article>
+    <article class="card column">
+        <header class="heading">
+            <img src="https://reqres.in/img/faces/4-image.jpg" alt="avatar" class="avatar">
+            <nav>
+                <a class="row link" href=""><i class="material-icons">info</i>See details</a>
+            </nav>
+        </header>
+        <h2>Eve Holt</h2>
+        <figure class="row oval">
+            <i class="material-icons">person</i>
+            <p class="identification">ID: 4</p>
+        </figure>
+    </article>
+    <article class="card column">
+        <header class="heading">
+            <img src="https://reqres.in/img/faces/5-image.jpg" alt="avatar" class="avatar">
+            <nav>
+                <a class="row link" href=""><i class="material-icons">info</i>See details</a>
+            </nav>
+        </header>
+        <h2>Charles Morris</h2>
+        <figure class="row oval">
+            <i class="material-icons">person</i>
+            <p class="identification">ID: 5</p>
+        </figure>
+    </article>
+    <article class="card column">
+        <header class="heading">
+            <img src="https://reqres.in/img/faces/6-image.jpg" alt="avatar" class="avatar">
+            <nav>
+                <a class="row link" href=""><i class="material-icons">info</i>See details</a>
+            </nav>
+        </header>
+        <h2>Tracey Ramos</h2>
+        <figure class="row oval">
+            <i class="material-icons">person</i>
+            <p class="identification">ID: 6</p>
+        </figure>
+    </article>
+</div>
+
+</body>
+</html>

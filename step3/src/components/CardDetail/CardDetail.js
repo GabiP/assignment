@@ -25,7 +25,8 @@ class CardDetail extends Component {
     render() {
         const { detail } = this.state;
         return (
-            <article className="wrapper">
+            Object.keys(detail).length !== 0 ? (
+                <article className="wrapper">
                 <h1>{`Details for ${detail.first_name}`}</h1>
                 <div className="detail">
                     <img src={detail.avatar} alt="avatar" className="image" />
@@ -34,7 +35,7 @@ class CardDetail extends Component {
                         <p className="overflow">{detail.email}</p>
                     </section>
                 </div>
-            </article>
+            </article>) : 'Waiting'
         );
     }
 }

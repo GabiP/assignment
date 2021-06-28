@@ -1,12 +1,18 @@
 .card {
   max-width: 300px;
+  flex-grow: 1;
+  width: 33%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 20px;
+  margin: 8px;
 }
 .detail {
   max-height: 200px;
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.mainHeading {
+  margin-left: 8px;
 }
 .avatar {
   vertical-align: middle;
@@ -49,35 +55,12 @@
   justify-content: space-between;
 }
 .wrapper {
-  max-width: 65rem;
+  max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
 }
-.auto-grid {
-  --auto-grid-min-size: 16rem;
-}
-
-.auto-grid > * {
-  max-width: 400px;
-}
-
-.auto-grid > * + * {
-  margin-top: 1rem;
-}
-
-@supports (display: grid) {
-  .auto-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-    grid-gap: 1rem;
-  }
-
-  .auto-grid > * {
-    max-width: unset;
-  }
-
-  .auto-grid > * + * {
-    margin-top: unset;
-  }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
 }
